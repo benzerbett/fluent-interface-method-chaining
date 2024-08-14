@@ -5,11 +5,13 @@ import "fmt"
 // enum for job group
 type JobGroup int
 
+// enum for job group
+// ref: https://yourbasic.org/golang/iota/
 const (
-	Engineer JobGroup = iota
-	Manager  JobGroup = iota
-	Founder  JobGroup = iota
-	Designer JobGroup = iota
+	Engineer JobGroup = iota + 1
+	Manager
+	Founder
+	Designer
 )
 
 type Employee struct {
